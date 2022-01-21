@@ -3,7 +3,7 @@
 потому что принимать она может только число.
 */
 
-const f = function(value) {
+function f(value) {
     if (typeof value !== 'number') {
         throw new Error('parameter is not a number type');
     }
@@ -12,5 +12,5 @@ const f = function(value) {
 };
 
 
-console.log("Задание 31. Ответ: " + f(2)); 
-console.log("Задание 31. Ответ: " + f("Content")); 
+console.log("Задание 3.1. Ответ: " + f(2)); // 8
+console.log("Задание 3.1. Ответ: " + f("Content"));  //Error: parameter type is not a Number
