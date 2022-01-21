@@ -11,6 +11,5 @@ function f(value) {
     return Math.pow(value, 3); // value ** 3
 };
 
-
-console.log("Задание 3.1. Ответ: " + f(2)); // 8
-console.log("Задание 3.1. Ответ: " + f("Content"));  //Error: parameter type is not a Number
+console.log("Задача 3.1. Ответ: " + f(2)); // 8
+console.log("Задача 3.1. Ответ: " + f("Content"));  //Error: parameter type is not a Number
