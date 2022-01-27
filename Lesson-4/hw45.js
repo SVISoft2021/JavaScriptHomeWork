@@ -39,4 +39,12 @@ const acc = 15;
 console.log(`Заданный массив [${arr}]`);
 console.log('Обработка [сумма всех элементов начиная с ' + acc + ']:');
 console.log('-> ' + 
-    Reduce(arr, function (item, i, arr) {return item + acc}, acc));
+    Reduce(arr, function (acc, item, i, arr) {return item + acc}, acc));
+
+
+const arr1 = ['A', 'B', 'C'];
+const acc1 = '#';
+console.log(`\nЗаданный массив [${arr1}]`);
+console.log('Обработка [слияние элементов начиная с ' + acc1 + ']:');
+console.log('-> ' + 
+    Reduce(arr1, function (acc1, item, i, arr1) {return item + acc1}, acc1));    
