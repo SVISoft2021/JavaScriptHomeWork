@@ -7,10 +7,8 @@
 - Первый параметр обязателен и может принимать только массив
 - Второй параметр обязателен и может принимать только функцию
 
-```javascript
 const arr = [1,2,3];
 some(arr, function(item, i, arr) {});
-```
 */
 
 function Some(array, callback, thisArg) {
