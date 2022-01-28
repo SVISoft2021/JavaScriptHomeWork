@@ -14,7 +14,7 @@ reduceRight(arr, function(acc, item, i, arr) {}, acc);
 
 */
 
-function Reduce(array, callback, acc) {
+function ReduceRight(array, callback, acc) {
     if (!Array.isArray(array)) {
         throw new TypeError(array + ' это не массив');
     }
@@ -38,7 +38,7 @@ const acc = 15;
 console.log(`Заданный массив [${arr}]`);
 console.log('Обработка [сумма всех элементов (с конца массива) начиная с ' + acc + ']:');
 console.log('-> ' + 
-    Reduce(arr, function (acc, item, i, arr) {return item + acc}, acc));
+    ReduceRight(arr, function (acc, item, i, arr) {return item + acc}, acc));
 
 
 const arr1 = ['A', 'B', 'C'];
@@ -46,4 +46,4 @@ const acc1 = '#';
 console.log(`\nЗаданный массив [${arr1}]`);
 console.log('Обработка [слияние (с конца массива) элементов начиная с ' + acc1 + ']:');
 console.log('-> ' + 
-    Reduce(arr1, function (acc1, item, i, arr1) {return item + acc1}, acc1));    
+    ReduceRight(arr1, function (acc1, item, i, arr1) {return item + acc1}, acc1));    

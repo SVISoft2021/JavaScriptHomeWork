@@ -14,10 +14,10 @@ console.log( arrLength ); // 4,5,2,3
 - используйте вместо цикла `for` метод `map`
 */
 
-var arr = ['abcd', 'abcde', 'ab', 'abc'];
-var arrLength = arr.map(val => val.length);
+var array = ['abcd', 'abcde', 'ab', 'abc'];
+var arrayNew = array.map(val => val.length);
 
-console.log(`\nЗаданный массив - [${arr}]`);
+console.log(`\nЗаданный массив - [${array}]`);
 console.log('Обработка [массив из длины элементов]:');
 
-console.log(`->  [${arrLength}]`);
+console.log(`->  [${arrayNew}]`);
